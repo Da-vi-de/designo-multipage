@@ -1,11 +1,16 @@
 import React from "react";
 import { GlobalStyles } from "../components/styles/GlobalStyles";
+import { Container } from "../components/styles/Wrapper.styled";
+
+import Header from "../components/header/Header";
 
 function Home() {
     return(
         <>
         <GlobalStyles />
-        <h1>Hello World!</h1>
+        <Container>
+            <Header />
+        </Container>
         </>
     )
 }
