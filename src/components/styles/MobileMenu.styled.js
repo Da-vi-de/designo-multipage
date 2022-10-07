@@ -20,7 +20,6 @@ export const StyledMenu = styled.nav`
     padding: .5rem 0;
     letter-spacing: .3rem;
     color: var(--color-white);
-    text-decoration: none;
     list-style: none;
 
     &:focus-visible {
