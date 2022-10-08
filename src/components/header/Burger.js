@@ -10,6 +10,7 @@ function Burger({open, setOpen}) {
             onClick={() => setOpen(!open)}
             aria-label="Menu"
             aria-expanded={open ? "true" : "false"}
+            aria-controls="nav"
             >
                 <div ></div>
                 <div></div>

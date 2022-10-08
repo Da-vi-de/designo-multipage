@@ -24,15 +24,16 @@ const Navigation = styled.nav`
             list-style: none;
 
         &:focus-visible {
-            outline: 2px solid var(--color-black);
+            outline: 4px solid var(--color-black);
             }
         }
+
     }
     `
 
 function Navbar() {
     return(
-        <Navigation role="navigation">
+        <Navigation>
             <ul>
                 <li><Link to="/about">our company</Link></li>
                 <li><Link to="/locations">locations</Link></li>

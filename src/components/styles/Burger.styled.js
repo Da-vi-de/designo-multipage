@@ -14,7 +14,7 @@ export const StyledBurger = styled.button`
   padding: 0;
 
   &:focus-visible {
-    outline: 2px solid var(--color-black);
+    outline: 4px solid var(--color-black);
   }
 
   div {
