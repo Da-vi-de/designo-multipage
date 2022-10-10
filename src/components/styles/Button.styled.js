@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
+import { QUERIES } from "../../utils/mediaQueries";
 
 export const ButtonLink = styled(Link)`
     width: 9.5rem;
@@ -19,8 +20,12 @@ export const ButtonLink = styled(Link)`
     }
 
     &:focus-visible {
-    outline: 2px solid var(--color-black);
+    outline: 4px solid var(--color-black);
   }
 
+
+  @media ${QUERIES.desktop} {
+    margin-right: 20rem;
+}
 `;
 

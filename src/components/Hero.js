@@ -9,6 +9,7 @@ function Hero() {
         <Intro>
             <Container>
                 <div className="content-position">
+                    <div className="text-button-position">
                     <h1>
                         Award-winning custom designs and digital
                         branding solutions
@@ -21,7 +22,8 @@ function Hero() {
                         more about our services.
                     </p>
                     <ButtonLink to="/about">Learn More</ButtonLink>
-                </div>
+                    </div>
+                 </div>
                 <div className="phone-img"></div>
              </Container>
         </Intro>

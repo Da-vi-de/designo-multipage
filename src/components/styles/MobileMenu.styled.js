@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { CommonHover } from './CommonHover.styled';
 
 export const StyledMenu = styled.nav`
   display: flex;
@@ -12,7 +13,6 @@ export const StyledMenu = styled.nav`
   transition: transform 0.3s ease-in-out;
   transform: ${({ open }) => open ? 'translateX(0)' : 'translateX(100%)'};
 
-
   li, a {
     font-size: var(--font-size-1_5);
     text-transform: uppercase;
@@ -24,6 +24,11 @@ export const StyledMenu = styled.nav`
 
     &:focus-visible {
       outline: 4px solid var(--color-white);
+    }
   }
-}
+
+  ${CommonHover}
+  .underline-hover-effect::before {
+      background-color: var(--color-white);
+  }
 `;
