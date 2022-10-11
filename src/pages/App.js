@@ -1,9 +1,9 @@
 import React from "react";
-import { GlobalStyles } from "../components/styles/GlobalStyles";
-import { Container } from "../components/styles/Wrapper.styled";
+import { GlobalStyles } from "../components/styles/shared-style/GlobalStyles";
+import { Container } from "../components/styles/shared-style/Wrapper.styled";
 
-import Header from "../components/header/Header";
-import Hero from "../components/Hero";
+import Header from "../components/home/header/Header";
+import Main from "../components/home/Main";
 
 function Home() {
     return(
@@ -12,7 +12,10 @@ function Home() {
         <Container>
             <Header />
         </Container>
-        <Hero />
+        <Main />
+        <Container>
+
+        </Container>
         </>
     )
 }

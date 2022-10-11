@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { QUERIES } from '../../utils/mediaQueries';
+import { QUERIES } from '../../../../utils/mediaQueries';
 
 export const StyledBurger = styled.button`
   display: flex;

@@ -1,12 +1,26 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import styled from "styled-components";
 
-import { Intro } from "./styles/Hero.styled";
-import { Container } from "./styles/Wrapper.styled";
-import { ButtonLink } from "./styles/Button.styled";
+import { QUERIES } from "../../utils/mediaQueries";
 
-function Hero() {
+import { StyledMain  } from "../styles/home/Main.styled";
+import { Container } from "../styles/shared-style/Wrapper.styled";
+import { CommonButtonLink } from "../styles/shared-style/CommonButtonLink.styled";
+
+const ButtonLink = styled(Link)`
+    ${CommonButtonLink}
+    background-color: var(--color-white);
+    color: var(--color-black);
+
+    @media ${QUERIES.desktop} {
+        margin-right: 20rem;
+    }
+`;
+
+function Main() {
     return(
-        <Intro>
+        <StyledMain >
             <Container>
                 <div className="content-position">
                     <div className="text-button-position">
@@ -26,8 +40,8 @@ function Hero() {
                  </div>
                 <div className="phone-img"></div>
              </Container>
-        </Intro>
+        </StyledMain>
     )
 }
 
-export default Hero;
+export default Main;

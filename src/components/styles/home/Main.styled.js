@@ -1,9 +1,9 @@
 import styled from 'styled-components';
-import bigCirle from "../../assets/home/desktop/bg-pattern-hero-home.svg";
-import PhoneImage from "../../assets/home/desktop/image-hero-phone.png";
-import { QUERIES } from '../../utils/mediaQueries';
+import bigCirle from "../../../assets/home/desktop/bg-pattern-hero-home.svg";
+import PhoneImage from "../../../assets/home/desktop/image-hero-phone.png";
+import { QUERIES } from '../../../utils/mediaQueries';
 
-export const Intro = styled.main`
+export const StyledMain = styled.main`
     margin-top: 1rem;
     background: var(--color-peach)  url(${bigCirle})  no-repeat 0;
     background-size: auto;
@@ -77,7 +77,7 @@ export const Intro = styled.main`
         .text-button-position {
             width: 35rem;
             position: relative;
-            top: 23rem;
+            top: 24rem;
         }
 
         .phone-img {

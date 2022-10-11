@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 
-import logo from "../../assets/shared/desktop/logo-dark.png"
+import logo from "../../../assets/shared/desktop/logo-dark.png"
 
 const Logo = styled.img`
     max-width: 12rem;

@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { CommonHover } from './CommonHover.styled';
+import { CommonHover } from '../../shared-style/CommonHover.styled';
 
 export const StyledMenu = styled.nav`
   display: flex;
