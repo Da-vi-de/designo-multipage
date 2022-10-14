@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { QUERIES } from "../../../../utils/mediaQueries";
-import { CommonHover } from "../../shared-style/CommonHover.styled";
+import { CommonHover } from "../../shared-styles/CommonHover.styled";
 
 export const StyledNavigation = styled.nav`
     display: none;

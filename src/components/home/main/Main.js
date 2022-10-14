@@ -2,11 +2,11 @@ import React from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 
-import { QUERIES } from "../../utils/mediaQueries";
+import { QUERIES } from "../../../utils/mediaQueries";
 
-import { StyledMain  } from "../styles/home/Main.styled";
-import { Container } from "../styles/shared-style/Wrapper.styled";
-import { CommonButtonLink } from "../styles/shared-style/CommonButtonLink.styled";
+import { StyledMain  } from "../../styles/home-styles/main-styles/Main.styled";
+import { Container } from "../../styles/shared-styles/Wrapper.styled";
+import { CommonButtonLink } from "../../styles/shared-styles/CommonButtonLink.styled";
 
 const ButtonLink = styled(Link)`
     ${CommonButtonLink}

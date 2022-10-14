@@ -1,7 +1,7 @@
 import styled from 'styled-components';
-import bigCirle from "../../../assets/home/desktop/bg-pattern-hero-home.svg";
-import PhoneImage from "../../../assets/home/desktop/image-hero-phone.png";
-import { QUERIES } from '../../../utils/mediaQueries';
+import bigCirle from "../../../../assets/home/desktop/bg-pattern-hero-home.svg";
+import PhoneImage from "../../../../assets/home/desktop/image-hero-phone.png";
+import { QUERIES } from '../../../../utils/mediaQueries';
 
 export const StyledMain = styled.main`
     margin-top: 1rem;
@@ -39,7 +39,7 @@ export const StyledMain = styled.main`
     }
 
     @media ${QUERIES.tabletMini} {
-        max-width: min(88%);
+        max-width: min(90%);
         margin: auto;
         border-radius: .5rem;
         background-position: 250% 50%;

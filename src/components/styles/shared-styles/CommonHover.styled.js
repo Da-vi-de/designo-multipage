@@ -16,7 +16,7 @@ a.underline-hover-effect {
     left: 0;
     bottom: 0;
     width: 0;
-    height: 3px;
+    height: 2px;
     transition: width 0.25s ease-out;
     }
     .underline-hover-effect:hover::before {

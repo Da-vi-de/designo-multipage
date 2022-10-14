@@ -1,9 +1,10 @@
 import React from "react";
-import { GlobalStyles } from "../components/styles/shared-style/GlobalStyles";
-import { Container } from "../components/styles/shared-style/Wrapper.styled";
+import { GlobalStyles } from "../components/styles/shared-styles/GlobalStyles";
+import { Container } from "../components/styles/shared-styles/Wrapper.styled";
 
 import Header from "../components/home/header/Header";
-import Main from "../components/home/Main";
+import Main from "../components/home/main/Main";
+import ViewProjects from "../components/home/viewProjects-banners/ViewProjects";
 
 function Home() {
     return(
@@ -14,7 +15,7 @@ function Home() {
         </Container>
         <Main />
         <Container>
-
+            <ViewProjects />
         </Container>
         </>
     )
