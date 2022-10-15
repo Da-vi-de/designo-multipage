@@ -1,7 +1,6 @@
 import { QUERIES } from "../../../utils/mediaQueries"
 
 export const CommonViewProjectsBanner =`
-
 margin-top: 2rem;
 
 .container {
