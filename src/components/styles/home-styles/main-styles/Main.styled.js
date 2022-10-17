@@ -1,16 +1,16 @@
 import styled from 'styled-components';
 import bigCirle from "../../../../assets/home/desktop/bg-pattern-hero-home.svg";
-import PhoneImage from "../../../../assets/home/desktop/image-hero-phone.png";
 import { QUERIES } from '../../../../utils/mediaQueries';
 
 export const StyledMain = styled.main`
     margin-top: 1rem;
     background: var(--color-peach)  url(${bigCirle})  no-repeat 0;
     background-size: auto;
+    overflow: hidden;
 
     .text-button-position {
         display: flex;
-        flex-direction: column
+        flex-direction: column;
     }
 
     h1, p {
@@ -30,12 +30,16 @@ export const StyledMain = styled.main`
         margin-bottom: 1.5rem;
     }
 
+    .img-container {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        height: 30rem;
+  }
+
     .phone-img {
-        background-image: url(${PhoneImage});
-        height: 26rem;
-        background-repeat: no-repeat;
-        background-size: 190%;
-        background-position: 50% 21%;
+        max-width: 100rem;
+        height: 50rem;
     }
 
     @media ${QUERIES.tabletMini} {
@@ -59,15 +63,11 @@ export const StyledMain = styled.main`
             padding: 0 2.5rem;
             font-size: var(--font-size-1_25);
         }
-
-        .phone-img {
-            background-size: 100%;
-        }
-    }
+}
 
     @media ${QUERIES.desktop} {
-        background-position: 100% 50%;
-        background-size: 58%;
+        background-position: 90% 50%;
+        background-size: 45%;
 
         .content-position {
             display: flex;
@@ -77,12 +77,7 @@ export const StyledMain = styled.main`
         .text-button-position {
             width: 35rem;
             position: relative;
-            top: 24rem;
-        }
-
-        .phone-img {
-            background-size: 50%;
-            background-position: 100% 45%;
+            top: 2rem;
         }
 
         h1, p {
@@ -97,10 +92,15 @@ export const StyledMain = styled.main`
             margin-bottom: 3rem;
         }
 
-        @media ${QUERIES.megaDesktop} {
-            .phone-img {
-            background-size: 40%;
+        .img-container {
+            justify-content: flex-end;
+            height: 10rem;
         }
-      }
+
+        .phone-img {
+            height: 80rem;
+            margin-top: -39rem;
+            transform: translateX(6rem);
+        }
     }
 `;

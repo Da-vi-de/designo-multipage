@@ -8,10 +8,6 @@ margin-top: 2rem;
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: .5rem;
-
-    &:hover {
-        filter: sepia(100%);
-    }
 }
 
 .text-container {
@@ -58,6 +54,10 @@ a {
 
     a {
         font-size: var(--font-size-1_5);
+        margin-top: .7rem;
+     }
+
+     .arrow-img {
         margin-top: .7rem;
      }
   }
