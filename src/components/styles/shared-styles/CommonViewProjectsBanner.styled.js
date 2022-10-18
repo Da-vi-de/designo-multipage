@@ -8,6 +8,10 @@ margin-top: 2rem;
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: .5rem;
+
+    &:hover {
+        filter: sepia(50%);
+     }
 }
 
 .text-container {

@@ -66,7 +66,7 @@ export const StyledMain = styled.main`
 }
 
     @media ${QUERIES.desktop} {
-        background-position: 90% 50%;
+        background-position: 100% 50%;
         background-size: 45%;
 
         .content-position {
@@ -98,7 +98,7 @@ export const StyledMain = styled.main`
         }
 
         .phone-img {
-            height: 80rem;
+            height: 70rem;
             margin-top: -39rem;
             transform: translateX(6rem);
         }
