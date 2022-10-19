@@ -4,6 +4,7 @@ import { QUERIES } from '../../../../utils/mediaQueries';
 
 export const StyledMain = styled.main`
     margin-top: 1rem;
+    padding-top: 4rem;
     background: var(--color-peach)  url(${bigCirle})  no-repeat 0;
     background-size: auto;
     overflow: hidden;
@@ -16,18 +17,19 @@ export const StyledMain = styled.main`
     h1, p {
        text-align: center;
        color: var(--color-white) ;
-       font-weight: 400;
     }
 
     h1 {
        font-size: var(--font-size-1_5);
        letter-spacing: .2rem;
+       font-weight: 500;
     }
 
     p {
         font-size: var(--font-size-1);
         padding: 1rem 0;
         margin-bottom: 1.5rem;
+        font-weight: 400;
     }
 
     .img-container {
@@ -61,6 +63,7 @@ export const StyledMain = styled.main`
 
         p {
             padding: 0 2.5rem;
+            padding-bottom: 2rem;
             font-size: var(--font-size-1_25);
         }
 }

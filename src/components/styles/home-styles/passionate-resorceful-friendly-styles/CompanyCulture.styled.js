@@ -14,7 +14,7 @@ export const StyledCompanyCulture = styled.article`
         justify-content: center;
         background-image: url(${smallCircle});
         background-repeat: no-repeat;
-        background-position: 50% 0;
+        background-position: 50% 55%;
     }
 
     .title, .text {
@@ -58,5 +58,22 @@ export const StyledCompanyCulture = styled.article`
         .title {
             margin-bottom: .3rem;
         }
+    }
+
+    @media ${QUERIES.desktop} {
+        flex-direction: row;
+
+        .content {
+            flex-direction: column;
+        }
+
+        .title-text-tablet-desk {
+            align-items: center;
+        }
+
+        .title, .text {
+            text-align: center;
+        }
+
     }
 `
