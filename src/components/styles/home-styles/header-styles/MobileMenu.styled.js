@@ -26,9 +26,8 @@ export const StyledMenu = styled.nav`
       outline: 4px solid var(--color-white);
     }
   }
-
   ${CommonHover}
-  .underline-hover-effect::before {
-      background-color: var(--color-white);
+    .underline-hover-effect::before {
+        background-color: var(--color-white);
   }
 `;

@@ -9,10 +9,6 @@ const Logo = styled.img`
     height: auto;
     margin-right: 3.5rem;
     margin-top: 1rem;
-
-    &:focus-visible {
-        outline: 2px solid var(--color-black);
-    }
 `
 function LogoDark() {
     return(
