@@ -4,6 +4,7 @@ import { QUERIES } from "../../../../utils/mediaQueries";
 
 export const StyledCompanyCulture = styled.article`
     margin-top: 6rem;
+    margin-bottom: 10rem;
     display: flex;
     flex-direction: column;
     align-items: center;

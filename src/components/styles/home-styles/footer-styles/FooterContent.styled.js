@@ -61,10 +61,6 @@ export const StyledFooterContent = styled.div`
         width: 1.5rem;
         height: 1.5rem;
         cursor: pointer;
-
-        &:hover {
-            background-color: var(--color-light-peach);
-        }
     }
 
     @media ${QUERIES.tabletMini} {
@@ -103,3 +99,7 @@ export const StyledFooterContent = styled.div`
         }
     }
 `
+
+/*
+#E7816B
+*/
