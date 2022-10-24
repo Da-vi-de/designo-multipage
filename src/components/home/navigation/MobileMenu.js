@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { bool } from 'prop-types';
-import { StyledMenu } from '../../styles/home-styles/header-styles/MobileMenu.styled';
+import { StyledMenu } from '../../styles/home-styles/navigation-styles/MobileMenu.styled';
 
 
 function Menu({ open }) {

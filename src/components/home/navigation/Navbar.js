@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { StyledNavigation } from "../../styles/home-styles/header-styles/Navigation.styled";
+import { StyledNavigation } from "../../styles/home-styles/navigation-styles/Navigation.styled";
 
 function Navbar() {
     return(

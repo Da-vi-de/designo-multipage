@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import bigCirle from "../../../../assets/home/desktop/bg-pattern-hero-home.svg";
 import { QUERIES } from '../../../../utils/mediaQueries';
 
-export const StyledMain = styled.main`
+export const StyledHeader = styled.header`
     margin-top: 1rem;
     padding-top: 4rem;
     background: var(--color-peach)  url(${bigCirle})  no-repeat 0;
