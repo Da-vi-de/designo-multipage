@@ -11,6 +11,7 @@ export const GlobalStyles = createGlobalStyle`
   --color-dark-grey: hsl(264, 5%, 20%);
   --color-light-peach: hsl(11, 100%, 80%);
   --color-peach: hsl(11, 73%, 66%);
+  --color-light-cream: hsl(14, 76%, 97%, 1);
 
   /* Font-size */
   --font-size-0_5: .5rem;
