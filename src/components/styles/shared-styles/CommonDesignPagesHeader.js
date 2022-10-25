@@ -1,9 +1,7 @@
-import styled from "styled-components";
 import { QUERIES } from "../../../utils/mediaQueries";
-
 import introBg from "../../../assets/web-design/desktop/bg-pattern-intro-web.svg";
 
-export const Header = styled.header`
+export const CommonHeader =`
     background: var(--color-peach) url(${introBg}) no-repeat;
     background-position: 100% 0%;
     min-height: 20rem;
@@ -11,6 +9,7 @@ export const Header = styled.header`
     place-content: center;
     text-align: center;
     color: var(--color-white);
+    margin-top: .5rem;
     padding: .5rem;
 
     h1 {

@@ -1,5 +1,10 @@
 import React from "react";
-import { Header } from "../styles/web-design-styles/WebDesignHeader.styled";
+import styled from "styled-components";
+import { CommonHeader } from "../styles/shared-styles/CommonDesignPagesHeader";
+
+const Header = styled.header`
+    ${CommonHeader}
+`;
 
 function WebDesignHeader() {
     return(

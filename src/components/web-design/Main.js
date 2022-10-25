@@ -12,7 +12,6 @@ import campImg from "../../assets/web-design/desktop/image-camp.jpg";
 const StyledMain = styled.main`
     ${CommonCard}
 `
-
 function Main() {
     return(
         <StyledMain>
