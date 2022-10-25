@@ -11,7 +11,7 @@ function GraphicDesignBanner() {
                 <div className="text-container">
                     <h3>Graphic Design</h3>
                     <div className="link-position">
-                        <Link to="/web-design">view projects</Link>
+                        <Link to="/graphic-design">view projects</Link>
                         <img src={iconRightArrow} alt="right arrow" className="arrow-img"/>
                     </div>
                 </div>

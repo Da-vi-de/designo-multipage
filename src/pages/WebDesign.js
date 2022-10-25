@@ -4,12 +4,10 @@ import { Container } from "../components/styles/shared-styles/Wrapper.styled";
 
 import Navigation from "../components/home/navigation/Navigation";
 import WebDesignHeader from "../components/web-design/WebDesignHeader";
-import Main from "../components/web-design/Main";
-import AppDesignBanner from "../components/home/viewProjects-banners/AppDesignBanner";
-import GraphicDesignBanner from "../components/home/viewProjects-banners/GraphicDesignBanner";
+import WebDesignMain from "../components/web-design/WebDesignMain";
+import ViewProjects from "../components/home/viewProjects-banners/ViewProjects";
 import Footer from "../components/home/footer/Footer";
 import { Spacer } from "../components/styles/shared-styles/Spacer.styled";
-import { DesignBannerDesktopSpace } from "../components/styles/shared-styles/DesignBannerDesktopSpace.styled";
 
 function WebDesign() {
     return(
@@ -23,10 +21,8 @@ function WebDesign() {
         <WebDesignHeader />
 
         <Container>
-            <Main />
-            <AppDesignBanner />
-            <DesignBannerDesktopSpace />
-            <GraphicDesignBanner />
+            <WebDesignMain />
+            <ViewProjects />
             <Spacer />
         </Container>
 

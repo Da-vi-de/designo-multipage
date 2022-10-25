@@ -18,7 +18,7 @@ const GridDesktop = styled.main`
 function ViewProjects() {
     return(
         <GridDesktop>
-            <WebDesignBanner  />
+            <WebDesignBanner />
             <AppDesignBanner />
             <GraphicDesignBanner />
         </GridDesktop>

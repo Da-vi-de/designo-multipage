@@ -12,12 +12,12 @@ import campImg from "../../assets/web-design/desktop/image-camp.jpg";
 const StyledMain = styled.main`
     ${CommonCard}
 `
-function Main() {
+function WebDesignMain() {
     return(
         <StyledMain>
             <div className="card">
                 <div className="card-img">
-                    <img src={expressImg} alt="e-commerce website screenshot"/>
+                    <img src={expressImg} alt=" website screenshot"/>
                 </div>
 
                 <div className="card-info">
@@ -31,7 +31,7 @@ function Main() {
 
             <div className="card">
                 <div className="card-img">
-                    <img src={transferImg} alt="e-commerce website screenshot"/>
+                    <img src={transferImg} alt="website screenshot"/>
                 </div>
 
                 <div className="card-info">
@@ -45,7 +45,7 @@ function Main() {
 
             <div className="card">
                 <div className="card-img">
-                    <img src={photonImg} alt="e-commerce website screenshot"/>
+                    <img src={photonImg} alt="website screenshot"/>
                 </div>
 
                 <div className="card-info">
@@ -59,7 +59,7 @@ function Main() {
 
             <div className="card">
                 <div className="card-img">
-                    <img src={builderImg} alt="e-commerce website screenshot"/>
+                    <img src={builderImg} alt="website screenshot"/>
                 </div>
 
                 <div className="card-info">
@@ -73,7 +73,7 @@ function Main() {
 
             <div className="card">
                 <div className="card-img">
-                    <img src={blogrImg} alt="e-commerce website screenshot"/>
+                    <img src={blogrImg} alt="website screenshot"/>
                 </div>
 
                 <div className="card-info">
@@ -87,7 +87,7 @@ function Main() {
 
             <div className="card">
                 <div className="card-img">
-                    <img src={campImg} alt="e-commerce website screenshot"/>
+                    <img src={campImg} alt="website screenshot"/>
                 </div>
 
                 <div className="card-info">
@@ -102,4 +102,4 @@ function Main() {
     )
 }
 
-export default Main;
+export default WebDesignMain;

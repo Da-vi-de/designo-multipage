@@ -4,7 +4,7 @@ import { StyledWebDesignBanner } from "../../styles/home-styles/viewProjects-sty
 
 import iconRightArrow from "../../../assets/shared/desktop/icon-right-arrow.svg";
 
-function WebDesignBanner() {
+function WebDesignBanner({padding}) {
     return(
         <StyledWebDesignBanner>
             <div className="container">

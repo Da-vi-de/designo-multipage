@@ -5,7 +5,7 @@ import webDesignMobile from "../../../../assets/home/mobile/image-web-design.jpg
 import webDesignTablet from "../../../../assets/home/tablet/image-web-design.jpg";
 import webDesignDesktop from "../../../../assets/home/desktop/image-web-design-large.jpg";
 
-import { CommonViewProjectsBanner } from "../../../styles/shared-styles/CommonViewProjectsBanner.styled"
+import { CommonViewProjectsBanner } from "../../../styles/shared-styles/CommonViewProjectsBanner.styled";
 
 export const StyledWebDesignBanner = styled.div`
     ${CommonViewProjectsBanner}
