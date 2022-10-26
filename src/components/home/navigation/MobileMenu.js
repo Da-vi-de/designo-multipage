@@ -8,9 +8,9 @@ function Menu({ open }) {
     return(
         <StyledMenu role="navigation"  open={open}>
             <ul>
-                <li><Link to="/about" className="underline-hover-effect">our company</Link></li>
-                <li><Link to="/locations" className="underline-hover-effect">locations</Link></li>
-                <li><Link to="/contact" className="underline-hover-effect">contact</Link></li>
+                <li><Link to="/about" className="underline-hover-effect" tabIndex="-1">our company</Link></li>
+                <li><Link to="/locations" className="underline-hover-effect" tabIndex="-1">locations</Link></li>
+                <li><Link to="/contact" className="underline-hover-effect" tabIndex="-1">contact</Link></li>
             </ul>
         </StyledMenu>
     )

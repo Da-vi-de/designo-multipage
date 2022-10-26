@@ -21,10 +21,6 @@ export const StyledMenu = styled.nav`
     letter-spacing: .3rem;
     color: var(--color-white);
     list-style: none;
-
-    &:focus-visible {
-      outline: 4px solid var(--color-white);
-    }
   }
   ${CommonHover}
     .underline-hover-effect::before {
