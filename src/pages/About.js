@@ -5,6 +5,9 @@ import { Container } from "../components/styles/shared-styles/Wrapper.styled";
 import Navigation from "../components/home/navigation/Navigation";
 import AboutHeader from "../components/about/AboutHeader";
 import AboutCardInfo from "../components/about/AboutCardInfo";
+import AboutCardInfoTwo from "../components/about/AboutCardInfoTwo";
+import Footer from "../components/home/footer/Footer";
+import {Spacer} from "../components/styles/shared-styles/Spacer.styled";
 
 function About() {
     return(
@@ -17,6 +20,9 @@ function About() {
 
         <AboutHeader />
         <AboutCardInfo />
+        <AboutCardInfoTwo />
+        <Spacer />
+        <Footer />
         </>
     )
 }

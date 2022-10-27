@@ -36,7 +36,7 @@ h1, h2 {
     margin: auto;
 
     .card {
-        margin-bottom: 7.5rem;
+        margin-bottom: 5rem;
     }
 
     .card-img {

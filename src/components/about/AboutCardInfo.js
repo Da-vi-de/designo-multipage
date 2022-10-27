@@ -14,7 +14,7 @@ function AboutCardInfo() {
                     <picture>
                         <source srcSet={aboutCardInfoImgDesktop} media="(min-width: 1200px)"/>
                         <source srcSet={aboutCardInfoImgTablet} media="(min-width: 790px)"/>
-                        <img src={aboutCardInfoImgMobile} alt="people working at a table"/>
+                        <img src={aboutCardInfoImgMobile} alt="woman staring at paintings"/>
                     </picture>
                 </div>
 
