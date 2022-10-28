@@ -5,6 +5,7 @@ import { Container } from "../components/styles/shared-styles/Wrapper.styled";
 import Navigation from "../components/home/navigation/Navigation";
 import AboutHeader from "../components/about/AboutHeader";
 import AboutCardInfo from "../components/about/AboutCardInfo";
+import AboutLocations from "../components/about/AboutLocations";
 import AboutCardInfoTwo from "../components/about/AboutCardInfoTwo";
 import Footer from "../components/home/footer/Footer";
 import {Spacer} from "../components/styles/shared-styles/Spacer.styled";
@@ -20,6 +21,7 @@ function About() {
 
         <AboutHeader />
         <AboutCardInfo />
+        <AboutLocations />
         <AboutCardInfoTwo />
         <Spacer />
         <Footer />

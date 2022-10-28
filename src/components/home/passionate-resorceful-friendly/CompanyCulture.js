@@ -12,7 +12,7 @@ function CompanyCulture() {
             <div className="content">
 
                 <div className="images">
-                    <img src= {passionateImg} alt=" " />
+                    <img src= {passionateImg} alt="smiling guy working at a desk illustration" />
                 </div>
 
                 <div className="title-text-tablet-desk">
@@ -33,7 +33,7 @@ function CompanyCulture() {
             <div className="content">
 
                 <div className="images">
-                    <img src={resourcefulImg} alt=" "/>
+                    <img src={resourcefulImg} alt="smiling guy working at a desk illustration"/>
                 </div>
 
                 <div className="title-text-tablet-desk">
@@ -54,7 +54,7 @@ function CompanyCulture() {
             <div className="content">
 
                 <div className="images">
-                    <img src={friendlyImg} alt=" "/>
+                    <img src={friendlyImg} alt="smiling girl and boy holding a screen illustration"/>
                 </div>
 
                 <div className="title-text-tablet-desk">
