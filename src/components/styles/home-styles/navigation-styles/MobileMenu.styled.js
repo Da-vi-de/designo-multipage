@@ -8,6 +8,7 @@ export const StyledMenu = styled.nav`
   height: 30vh;
   padding: 0  1rem;
   position: absolute;
+  z-index: 100;
   top: 7rem;
   left: 0;
   transition: transform 0.3s ease-in-out;

@@ -7,6 +7,16 @@ margin-top: 4rem;
     display: flex;
     flex-direction: column;
     margin-bottom: 2rem;
+
+    &:hover {
+        .card-info {
+            background-color: var(--color-peach);
+        }
+
+        h2, p {
+            color: var(--color-white);
+        }
+    }
 }
 
 .card .card-img  img {
@@ -32,6 +42,7 @@ margin-top: 4rem;
 .card-info {
     text-align: center;
 }
+
 
 h2 {
     text-transform: uppercase;
