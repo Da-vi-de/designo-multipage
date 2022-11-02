@@ -5,7 +5,7 @@ import '@react-google-maps/api';
 
 import LocationMap from "./LocationMap";
 
-// This step is necessary in order to see the marker on the map
+// This step is necessary in order to see the marker icon!
 delete L.Icon.Default.prototype._getIconUrl;
 
 L.Icon.Default.mergeOptions({

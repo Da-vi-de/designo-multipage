@@ -3,9 +3,9 @@ import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 
 import {StyledLocationMap} from "../../components/styles/locations/LocationMap.styled";
 
-function LocationMap({ location, address, contact, mapMarker }) {
+function LocationMap({ location, address, contact, mapMarker, order="text" }) {
     return(
-        <StyledLocationMap>
+        <StyledLocationMap className={`${order === "text" ? "" : "image-first"}`}>
             <MapContainer zoom={mapMarker.zoom} center={[mapMarker.lat, mapMarker.long]}>
               <TileLayer
                 attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
@@ -19,12 +19,12 @@ function LocationMap({ location, address, contact, mapMarker }) {
             </MapContainer>
             <div className="info">
               <h2>{location}</h2>
-              <div>
+              <div className='info-address-tab-desk-position'>
                 <p className='title'>{address.name}</p>
                 <p>{address.line1}</p>
                 <p>{address.line2}</p>
               </div>
-              <div>
+              <div className='info-contact-tab-desk-position'>
                 <p className='title'>Contact</p>
                 <p>P: {contact.phone}</p>
                 <p>M: {contact.email}</p>
