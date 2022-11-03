@@ -1,7 +1,7 @@
 import React from 'react';
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 
-import {StyledLocationMap} from "../../components/styles/locations/LocationMap.styled";
+import {StyledLocationMap} from "../../components/styles/locations-styles/LocationMap.styled";
 
 function LocationMap({ location, address, contact, mapMarker, order="text" }) {
     return(
