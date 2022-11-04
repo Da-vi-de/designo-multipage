@@ -33,4 +33,20 @@ export const StyledContacForm = styled.main`
         white-space: nowrap !important;
         border: 0 !important;
     }
+
+    .instructions {
+        font-size: var(--font-size-0_8);
+        border-radius: .5rem;
+        background: var(--color-black);
+        color: var(--color-white);
+        padding: .25rem;
+        position: relative;
+        bottom: -10px;
+    }
+
+    .offscreen {
+        position: absolute;
+        left: -9999px;
+    }
+
 `;
