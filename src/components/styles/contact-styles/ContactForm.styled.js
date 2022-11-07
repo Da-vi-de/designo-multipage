@@ -1,5 +1,4 @@
 import styled from "styled-components";
-
 import twoCircles from "../../../assets/contact/mobile/bg-pattern-hero-contact-mobile.svg";
 
 export const StyledContacForm = styled.main`
@@ -22,17 +21,43 @@ export const StyledContacForm = styled.main`
         }
     }
 
-    .visually-hidden {
-        position: absolute;
-        position: absolute !important;
-        width: 1px !important;
-        height: 1px !important;
-        padding: 0 !important;
-        margin: -1px !important;
-        overflow: hidden !important;
-        clip: rect(0,0,0,0) !important;
-        white-space: nowrap !important;
-        border: 0 !important;
+    form {
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        gap: .3rem;
+    }
+
+    input,
+    textarea {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        background-color: transparent;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        border: 1px solid var(--color-dark-grey);
+        background-color: var(--color-white);
+        border-radius: .25rem;
+
+        &:focus-visible {
+            outline: 2px solid var(--color-black);
+        }
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"], textarea {
+        display: block;
+        padding: .5rem .75rem;
+    }
+
+    label {
+        span {
+            font-size: var(--font-size-1_25);
+
+        }
     }
 
     .instructions {
@@ -42,7 +67,11 @@ export const StyledContacForm = styled.main`
         color: var(--color-white);
         padding: .25rem;
         position: relative;
-        bottom: -10px;
+        bottom: -5px;
+    }
+
+    .instructions > svg {
+    margin-right: 0.25rem;
     }
 
     .offscreen {
@@ -51,15 +80,18 @@ export const StyledContacForm = styled.main`
     }
 
     .hide {
-    display: none;
+        display: none;
     }
 
     .valid {
-        color: var(--color-lime-green);
+       color: var(--color-lime-green);
+       margin-left: 0.25rem;
+
     }
 
     .invalid {
         color: var(--color-red);
+        margin-left: 0.25rem;
+        ;
     }
-
 `;

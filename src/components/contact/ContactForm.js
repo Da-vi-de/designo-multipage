@@ -8,7 +8,16 @@ import { StyledContacForm } from "../styles/contact-styles/ContactForm.styled";
 import { CommonButtonLink } from "../styles/shared-styles/CommonButtonLink.styled";
 
 const SubmitButton = styled.button`
-    ${CommonButtonLink}
+ ${CommonButtonLink}
+    position: relative;
+    top: 1.5rem;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    margin-top: .5rem;
+    &:focus-visible {
+            outline: 2px solid var(--color-black);
+    }
 `;
 
 function ContactForm() {
@@ -70,7 +79,7 @@ function ContactForm() {
 
             <form onSubmit={handleSubmit}>
                 <label htmlFor="name">
-                    <span className="visually-hidden">name:</span>
+                  <span>Name:</span>
                     <FontAwesomeIcon icon={faCheck} className={validName && name ? "valid" : "hide"} />
                     <FontAwesomeIcon icon={faTimes} className={validName || !name ? "hide" : "invalid"} />
                 </label>
@@ -96,7 +105,7 @@ function ContactForm() {
                 </p>
 
                 <label htmlFor="email">
-                    <span className="visually-hidden">email:</span>
+                    <span>Email:</span>
                     <FontAwesomeIcon icon={faCheck} className={validEmail && email ? "valid" : "hide"} />
                     <FontAwesomeIcon icon={faTimes} className={validEmail || !email ? "hide" : "invalid"} />
                 </label>
@@ -120,7 +129,7 @@ function ContactForm() {
                 </p>
 
                 <label htmlFor="phoneNumber">
-                    <span className="visually-hidden">phone</span>
+                    <span>Phone:</span>
                     <FontAwesomeIcon icon={faCheck} className={validPhone && phone ? "valid" : "hide"} />
                     <FontAwesomeIcon icon={faTimes} className={validPhone || !phone ? "hide" : "invalid"} />
                 </label>
@@ -134,7 +143,7 @@ function ContactForm() {
                 />
 
                 <label htmlFor="message">
-                    <span className="visually-hidden">message</span>
+                    <span>Message</span>
                 </label>
                 <textarea
                     name="message"
@@ -150,7 +159,7 @@ function ContactForm() {
                 >
                 </textarea>
 
-                <div>
+                <div className="submit-btn">
                     <SubmitButton
                         disabled={!validName || !validEmail || !validPhone || !textMessage ? true : false}
                     >
