@@ -8,6 +8,7 @@ export const StyledContacForm = styled.main`
     background-repeat: no-repeat;
     background-position: 20% 0;
     max-height: 100%;
+    margin-top: 1rem;
 
     .content {
         padding: 3rem .5rem;
@@ -47,6 +48,18 @@ export const StyledContacForm = styled.main`
     .offscreen {
         position: absolute;
         left: -9999px;
+    }
+
+    .hide {
+    display: none;
+    }
+
+    .valid {
+        color: var(--color-lime-green);
+    }
+
+    .invalid {
+        color: var(--color-red);
     }
 
 `;

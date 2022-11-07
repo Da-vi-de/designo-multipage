@@ -1,6 +1,9 @@
-import { useRef, useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import styled from "styled-components";
+import { faCheck, faTimes, faInfoCircle } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
+import { NAME_REGEX, EMAIL_REGEX, PHONE_REGEX } from "../../utils/regex";
 import { StyledContacForm } from "../styles/contact-styles/ContactForm.styled";
 import { CommonButtonLink } from "../styles/shared-styles/CommonButtonLink.styled";
 
@@ -8,12 +11,7 @@ const SubmitButton = styled.button`
     ${CommonButtonLink}
 `;
 
-const NAME_REGEX = /^[A-z][A-z0-9-_]{3,23}$/;
-const EMAIL_REGEX = /[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/g;
-const PHONE_REGEX = /^\(?(\d{3})\)?[- ]?(\d{3})[- ]?(\d{4})$/;
-
 function ContactForm() {
-    const userRef = useRef();
 
     const [name, setName] = useState('');
     const [validName, setValidName] = useState(false);
@@ -25,13 +23,8 @@ function ContactForm() {
 
     const [phone, setPhone] = useState('');
     const [validPhone, setValidPhone] = useState(false);
-    const [phoneFocus, setPhoneFocus] = useState(false);
 
     const [textMessage, setTextMessage] = useState('');
-
-    useEffect(() => {
-        userRef.current.focus();
-    }, [])
 
     useEffect(() => {
         setValidName(NAME_REGEX.test(name));
@@ -45,10 +38,16 @@ function ContactForm() {
         setValidPhone(PHONE_REGEX.test(phone));
     }, [phone])
 
+    function clearFields(e) {
+        Array.from(e.target).forEach((e) => (e.value = ''));
+    }
+
     const handleSubmit = e => {
         e.preventDefault();
         alert("Thank you for contacting us!");
         console.log(name, email, phone, textMessage);
+
+        clearFields(e);
 
         setName('');
         setEmail('');
@@ -72,11 +71,12 @@ function ContactForm() {
             <form onSubmit={handleSubmit}>
                 <label htmlFor="name">
                     <span className="visually-hidden">name:</span>
+                    <FontAwesomeIcon icon={faCheck} className={validName && name ? "valid" : "hide"} />
+                    <FontAwesomeIcon icon={faTimes} className={validName || !name ? "hide" : "invalid"} />
                 </label>
                 <input
                     type="text"
                     id="name"
-                    ref={userRef}
                     autoComplete="off"
                     onChange={(e) => setName(e.target.value)}
                     value={name}
@@ -89,6 +89,7 @@ function ContactForm() {
                 />
 
                 <p id="namenote" className={nameFocus && name && !validName ? "instructions" : "offscreen"}>
+                <FontAwesomeIcon icon={faInfoCircle} />
                     4 to 24 characters.<br />
                     Must begin with a letter.<br />
                     Letters, numbers, underscores, hyphens allowed.
@@ -96,6 +97,8 @@ function ContactForm() {
 
                 <label htmlFor="email">
                     <span className="visually-hidden">email:</span>
+                    <FontAwesomeIcon icon={faCheck} className={validEmail && email ? "valid" : "hide"} />
+                    <FontAwesomeIcon icon={faTimes} className={validEmail || !email ? "hide" : "invalid"} />
                 </label>
                 <input
                     type="email"
@@ -111,12 +114,15 @@ function ContactForm() {
                 />
 
                 <p id="emailnote" className={emailFocus && email && !validEmail ? "instructions" : "offscreen"}>
+                <FontAwesomeIcon icon={faInfoCircle} />
                     Valid e-mail can contain only:<br />
                     latin letters, numbers, '@' and '.'
                 </p>
 
                 <label htmlFor="phoneNumber">
                     <span className="visually-hidden">phone</span>
+                    <FontAwesomeIcon icon={faCheck} className={validPhone && phone ? "valid" : "hide"} />
+                    <FontAwesomeIcon icon={faTimes} className={validPhone || !phone ? "hide" : "invalid"} />
                 </label>
                 <input
                     type="tel"
@@ -124,16 +130,8 @@ function ContactForm() {
                     autoComplete="off"
                     onChange={(e) => setPhone(e.target.value)}
                     required
-                    aria-describedby="phonenote"
                     placeholder="Phone"
-                    onFocus={() => setPhoneFocus(true)}
-                    onBlur={() => setPhoneFocus(false)}
                 />
-
-                <p id="phonenote" className={phoneFocus && phone && !validPhone ? "instructions" : "offscreen"}>
-                    Valid phone number must preceded by:<br />
-                    country prefix!
-                </p>
 
                 <label htmlFor="message">
                     <span className="visually-hidden">message</span>
@@ -148,7 +146,6 @@ function ContactForm() {
                     resize="none"
                     autoComplete="off"
                     required
-                    aria-describedby="textnote"
                     placeholder='Your Message'
                 >
                 </textarea>
