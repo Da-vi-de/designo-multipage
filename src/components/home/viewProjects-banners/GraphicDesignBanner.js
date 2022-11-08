@@ -9,7 +9,7 @@ function GraphicDesignBanner() {
         <StyledGraphicDesignBanner>
             <div className="container ">
                 <div className="text-container">
-                    <h3>Graphic Design</h3>
+                    <h2>Graphic Design</h2>
                     <div className="link-position">
                         <Link to="/graphic-design">view projects</Link>
                         <img src={iconRightArrow} alt="right arrow" className="arrow-img"/>

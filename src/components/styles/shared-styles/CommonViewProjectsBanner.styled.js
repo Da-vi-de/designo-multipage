@@ -25,14 +25,14 @@ margin-top: 2rem;
     display: flex;
 }
 
-h3, a {
+h2, a {
     text-transform: uppercase;
     color: var(--color-white);
     white-space: nowrap;
     letter-spacing: .1rem;
 }
 
-h3 {
+h2 {
     font-size: var(--font-size-1_5);
 }
 
@@ -52,7 +52,7 @@ a {
 @media ${QUERIES.desktop} {
     margin-top: 0;
 
-    h3 {
+    h2 {
         font-size: var(--font-size-2);
     }
 

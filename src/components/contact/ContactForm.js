@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import styled from "styled-components";
+import { QUERIES } from "../../utils/mediaQueries";
 import { faCheck, faTimes, faInfoCircle } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
@@ -17,6 +18,19 @@ const SubmitButton = styled.button`
     margin-top: .5rem;
     &:focus-visible {
             outline: 2px solid var(--color-black);
+    }
+
+    @media ${QUERIES.tabletMini} {
+        margin: 2rem 0;
+        left: 87%;
+    }
+
+    @media ${QUERIES.desktop} {
+        left: 82%;
+    }
+
+    @media ${QUERIES.megaDesktop} {
+        left: 87%;
     }
 `;
 
@@ -54,7 +68,6 @@ function ContactForm() {
     const handleSubmit = e => {
         e.preventDefault();
         alert("Thank you for contacting us!");
-        console.log(name, email, phone, textMessage);
 
         clearFields(e);
 

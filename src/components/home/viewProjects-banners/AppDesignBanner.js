@@ -9,7 +9,7 @@ function AppDesignBanner() {
         <StyledAppDesignBanner>
             <div className="container">
                 <div className="text-container">
-                    <h3>App Design</h3>
+                    <h2>App Design</h2>
                     <div className="link-position">
                         <Link to="/app-design">view projects</Link>
                         <img src={iconRightArrow} alt="right arrow" className="arrow-img"/>

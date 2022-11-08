@@ -1,5 +1,8 @@
 import styled from "styled-components";
+import { QUERIES } from "../../../utils/mediaQueries";
+
 import twoCircles from "../../../assets/contact/mobile/bg-pattern-hero-contact-mobile.svg";
+import heroBg from "../../../assets/contact/desktop/bg-pattern-hero-desktop.svg";
 
 export const StyledContacForm = styled.main`
     background-color: var(--color-peach);
@@ -56,7 +59,6 @@ export const StyledContacForm = styled.main`
     label {
         span {
             font-size: var(--font-size-1_25);
-
         }
     }
 
@@ -93,5 +95,52 @@ export const StyledContacForm = styled.main`
         color: var(--color-red);
         margin-left: 0.25rem;
         ;
+    }
+
+    @media ${QUERIES.tabletMini} {
+        max-width: min(90%);
+        margin: auto;
+        border-radius: .5rem;
+        background-image: url(${heroBg});
+        background-repeat: no-repeat;
+        background-position: -80% -50%;
+        padding: 0 3rem;
+
+        .content {
+            text-align: left;
+
+            h1 {
+                font-size: var(--font-size-3);
+            }
+        }
+    }
+
+    @media ${QUERIES.desktop} {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        background-position: -20% 100%;
+
+        .content {
+            grid-column: 1/2;
+            transform: translateY(20%);
+
+            p {
+                font-size: var(--font-size-1_25);
+            }
+        }
+
+        form {
+            grid-column: 2/2;
+        }
+    }
+
+    @media ${QUERIES.megaDesktop} {
+        p {
+            padding-right: 3rem;
+        }
+
+        form {
+            margin-top: 1.5rem;
+        }
     }
 `;

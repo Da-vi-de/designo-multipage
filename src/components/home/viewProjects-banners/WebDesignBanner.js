@@ -9,7 +9,7 @@ function WebDesignBanner({padding}) {
         <StyledWebDesignBanner>
             <div className="container">
                 <div className="text-container">
-                    <h3>Web Design</h3>
+                    <h2>Web Design</h2>
                     <div className="link-position">
                         <Link to="/web-design">view projects</Link>
                         <img src={iconRightArrow} alt="right arrow" className="arrow-img"/>
